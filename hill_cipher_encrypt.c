@@ -36,7 +36,7 @@ void hill_cipher_encrypt(u_int8_t *plaintext, u_int8_t *ciphertext) {
         u_int8_t encrypted_block[MATRIX_SIZE] = {0};
 
         for (u_int8_t row = 0; row < MATRIX_SIZE; ++row) {
-            for (int col = 0; col < MATRIX_SIZE; ++col) {
+            for (u_int8_t col = 0; col < MATRIX_SIZE; ++col) {
                 encrypted_block[row] += key[row][col] * block[col];
             }
             encrypted_block[row] %= MOD;
