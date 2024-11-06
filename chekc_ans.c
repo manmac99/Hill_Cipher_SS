@@ -1,7 +1,7 @@
 #include <stdio.h>
 #define MATRIX_SIZE 8
 
-u_int8_t ans[MATRIX_SIZE + 1] = "ULSMJJNX";
+//u_int8_t stored_ans[MATRIX_SIZE + 1] = "ULSMJJNX";
 
 u_int8_t check_ans(u_int8_t *ciphertext, u_int8_t *ans){
     u_int8_t ret = 1;
