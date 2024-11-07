@@ -1,7 +1,5 @@
 // hill_cipher_encrypt.c
 
-
-#include <string.h>
 #include <stdio.h>
 #include <ctype.h>
 
@@ -21,7 +19,7 @@ u_int8_t key[MATRIX_SIZE][MATRIX_SIZE] = {
 };
 
 void hill_cipher_encrypt(u_int8_t *plaintext, u_int8_t *ciphertext) {
-    u_int8_t length = strlen((char*)plaintext);
+    u_int8_t length = 8; //strlen((char*)plainte;
     if (length % MATRIX_SIZE != 0) {
         printf("Input Size must be %d.\n", MATRIX_SIZE);
         return;
